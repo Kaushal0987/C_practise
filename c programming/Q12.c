@@ -39,8 +39,7 @@ int main()
   break;
 
   case 3:
-  printf("Enter a number:\n");
-   scanf("%d", &num3);
+  printf("Enter a number:\n");scanf("%d", &num3);
 
    while (num3 != 0)
    {

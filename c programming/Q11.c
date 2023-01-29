@@ -7,7 +7,7 @@ int main()
     printf("Press 2 to calculate area of square\n");
     printf("Press 3 to calculate area of triangle\n");
     printf("press 4 to calculate area of rectangle\n");
-    printf("Enter your choice:\n");
+    printf("press 5 to exit\n");
     scanf("%d", &choice);
       
     switch (choice) 
@@ -46,6 +46,11 @@ int main()
         scanf("%d", &l);
         result = w * l;
         printf("Area of rectangle=%f", result);
+        break;
+    }
+    case 5:
+    {
+        printf("Exiting the system\n");
         break;
     }
     default:
