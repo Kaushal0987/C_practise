@@ -3,19 +3,20 @@
 int main()
 {
  int arr[] = {1,4,8,7,9,6,3}, i, num, stat = 0;
-
+/*Taking a num input from user*/
  printf("Enter a number = ");
  scanf("%d", &num);
 
  for(i=0; i<7; i++)
  {
+/*using IF case to check the existence of input num in the array*/
   if(num == arr[i])
   {
-   stat+= stat + 1;
+   stat+= 1;
    break;
   }
  }
-
+/*Printing the result*/
  if(stat==1)
  {
   printf("The number %d exists in the array", num);

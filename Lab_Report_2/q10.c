@@ -9,12 +9,14 @@ int main()
  printf("\nEnter the name of 5 students : ");
  for(i=0; i<5; i++)
  {
-  scanf("%s", name);
+  gets(name[i]);
+  fflush(stdin);
  }
  printf("\nEnter the ages of those 5 students : ");
  for(i=0; i<5; i++)
  {
   scanf("%d", &age[i]);
+  fflush(stdin);
  }
 
  for(i=0; i<5; i++)
@@ -34,7 +36,7 @@ int main()
   }
  }
 
- printf("The name and age of 5 students re-arranged in descending order of the name :\n");
+ printf("\nThe name and age of 5 students re-arranged in descending order of the name :\n");
  for(i=0; i<5; i++)
  {
   printf("%s\t%d\n", name[i], age[i]);

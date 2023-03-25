@@ -4,7 +4,7 @@ int main()
 {
  int arr[] = {1,2,3,4}, i, sum=0;
  float avg;
-
+/*FOR loop to calculate sum of all elements of the array*/
  for (i=0; i<4 ; i++)
  {
   sum = sum + arr[i];

@@ -26,10 +26,10 @@ int main()
 
  if(cmp==len)
  {
-  printf("%s is palindrome", stri);
+  printf("%s is palindrome", str);
  }
  else
  {
-  printf("%s is not palindrome", stri);
+  printf("%s is not palindrome", str);
  }
 }

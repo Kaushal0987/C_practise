@@ -1,28 +1,27 @@
 /*To compare 2 strings using pointer*/
 #include<stdio.h>
+#include<string.h>
 int main()
 {
- char str1[30], str2[30];
- int i;
- char* p1;
- char* p2;
+ char str1[50], str2[50];
+
+ char *pstr1 = str1;
+ char *pstr2 = str2;
 
  printf("Enter first string: ");
- gets(str1);
+ gets(pstr1);
+ fflush(stdin);
 
  printf("Enter second string: ");
- gets(str2);
+ gets(pstr2);
 
- p1 = &str1[30];
- p2 = &str2[30];
-
- if(str1[0]>str2[0])
+ if(*pstr1>*pstr2)
  {
-  printf("%s is alphabetically first", *p1);
+  printf("%s is greater then %s", str1, str2);
  }
- else if(str1[0]<str2[0])
+ else if(*pstr1<*pstr2)
  {
-  printf("%s is alphabetically first", *p2);
+  printf("%s is greater then %s", str2, str1);
  }
  else
  {

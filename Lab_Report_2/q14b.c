@@ -83,7 +83,7 @@ int main()
     max = num[i];
    }
 
-   if(num[i<min])
+   if(num[i]<min)
    {
     min = num[i];
    }

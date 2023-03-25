@@ -3,12 +3,13 @@
 int main()
 {
  int arr[] = {2, 5, 7, 8, 6, 4, 52, 15, 68, 98, 17}, i, even=0, odd=0;
- int* p1;
- int* p2;
+ int* p;
+
+ p = arr;
 
  for(i=0; i<11; i++)
  {
-  if(arr[i]%2==0)
+  if((*p+i)%2==0)
   {
    even++;
   }
@@ -17,10 +18,7 @@ int main()
    odd++;
   }
  }
-
- p1 = &even;
- p2 = &odd;
  
- printf("even : %d\nodd: %d", *p1, *p2);
+ printf("even: %d\nodd: %d", even, odd);
  
 }
