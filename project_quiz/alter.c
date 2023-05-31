@@ -49,7 +49,7 @@ main()
  {
   case 1:
   fp = fopen("General_Knowledge.txt", "ab");
-  if(fp=NULL)
+  if(fp==NULL)
   {
    printf("Error optaining question");
   }
@@ -81,7 +81,7 @@ main()
 
   case 2:
   fp = fopen("Science.txt", "ab");
-  if(fp=NULL)
+  if(fp==NULL)
   {
    printf("Error optaining question");
   }
@@ -113,7 +113,7 @@ main()
 
   case 3:
   fp = fopen("Geography.txt", "ab");
-  if(fp=NULL)
+  if(fp==NULL)
   {
    printf("Error optaining question");
   }
@@ -145,7 +145,7 @@ main()
 
   case 4:
   fp = fopen("Technology.txt", "ab");
-  if(fp=NULL)
+  if(fp==NULL)
   {
    printf("Error optaining question");
   }
@@ -177,7 +177,7 @@ main()
 
   case 5:
   fp = fopen("History.txt", "ab");
-  if(fp=NULL)
+  if(fp==NULL)
   {
    printf("Error optaining question");
   }
